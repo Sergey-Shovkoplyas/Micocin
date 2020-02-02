@@ -1,4 +1,4 @@
-# Micocin
+# Mikocin
 
 Start template with (optional)
 - normalize.css
