@@ -1,0 +1,16 @@
+.logo
+  display: inline-block
+  font-family: $font-main
+  font-size: 22px
+  font-weight: 800
+  color: #383334
+  &__text 
+    display: inline-block
+    margin-left: 10px
+    transition: all .5s
+  &:hover &__text
+    transform: scale(1.1)
+  &:hover .decor-circles__first
+    transform: scale(0.8) rotate(180deg)
+  &:hover .decor-circles__second
+    transform: scale(1.2) rotate(-180deg)

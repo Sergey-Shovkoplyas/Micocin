@@ -1,15 +1,34 @@
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
+  font-family: $font-main
   font-size: 18px
-  line-height: 1.2
+  line-height: 1.4
+  color: #444444
+
+a 
+  color: inherit
+  text-decoration: none
+
+h1, h2 
+  font-weight: 800
+  color: #383334
+
+strong  
+  font-weight: 500 
+  color: #000
 
 .row 
   display: flex
   flex-wrap: wrap
-  margin: 0 -15px
   
 .container
+  // outline: 1px solid green
   max-width: 1200px
   margin: 0 auto
   padding: 0 15px
