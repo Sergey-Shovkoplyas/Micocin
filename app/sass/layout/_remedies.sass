@@ -1,0 +1,116 @@
+.remedies 
+  text-align: center
+  background-color: #eef8fa
+
+.remedies__decor  
+  margin-bottom: 20px
+
+.remedies__title.section-title
+  margin-bottom: 80px
+  +media-xs 
+    word-wrap: break-word
+
+.remadies__row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px
+  margin-bottom: 55px
+
+.remadies__col
+  width: 33.33%
+  padding: 0 15px
+  +media-md 
+    width: 100%
+    margin-bottom: 55px
+    &:last-child
+      margin-bottom: 0px
+
+.remadies__item-wrap 
+  height: 100%
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    z-index: 1
+    top: -50px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: #eef8fa  no-repeat center
+  &--1
+    &::before
+      background-image: url('../img/remadies__item-1.svg')
+  &--2
+    &::before
+      background-image: url('../img/remadies__item-2.svg')
+  &--3
+    &::before
+      background-image: url('../img/remadies__item-3.svg')
+
+.remadies__item
+  position: relative
+  overflow: hidden
+  height: 100%
+  padding: 60px 41px
+  border-radius: 10px
+  background-color: #fff
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 5px
+    background-color: #a8c53a
+  +media-lg 
+    padding: 60px 25px
+
+.remadies__item-title
+  margin-bottom: 15px
+  font-size: 24px
+  line-height: 1.17
+  font-weight: 700
+  color: #000
+
+.remadies__item-subtitle
+  margin-bottom: 20px
+  color: #222
+  font-weight: 500
+
+.remadies__item-subtitle-text
+  font-size: 16px
+  line-height: 26px
+  color: #666666
+  font-style: italic
+
+.remadies__item-hr.hr-line
+  margin: 0 -20px
+  margin-bottom: 15px
+
+
+.remadies__item-but
+  margin-bottom: 10px
+  font-size: 24px
+  line-height: 26px
+  color: #ff6b00
+  font-weight: 800
+
+.remadies__item-text
+  margin: 0
+
+.remadies__conclusion.section-conclusion
+  &::before
+    content: 'ВЫВОД:'
+    top: -30px
+    padding-top: 15px
+    font-family: $font-main
+    font-size: 22px
+    line-height: 28px
+    font-weight: 700 
+    color: #000
+    background: #eef8fa url('../img/conclusion-2.svg') no-repeat center 
+ 
+
+     

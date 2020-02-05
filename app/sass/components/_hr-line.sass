@@ -1,0 +1,31 @@
+.hr-line 
+  position: relative
+  height: 14px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 1px
+    background-color: #d2dce6
+
+.hr-line__arrow
+  position: relative
+  margin: 0 auto
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 11px 15px 0 15px
+  border-color: #d2dce6 transparent transparent transparent
+  &::before
+    content: ''
+    position: absolute
+    top: -11px
+    left: 50%
+    transform: translateX(-50%)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 10px 14px 0 14px
+    border-color: #fff transparent transparent transparent;
