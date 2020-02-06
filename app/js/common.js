@@ -1,11 +1,7 @@
 window.onload = function () {
 	
-	console.log('js is working!!!'); 
+	new WOW({
+		mobile: false
+	}).init();
 
 }
-
-/* $( document ).ready(function() {
-
-	console.log( 'JQuery!!!' );
-
-}); */

@@ -100,6 +100,8 @@
 
 .header__description
   flex-grow: 1
+  +media-sm 
+    margin-bottom: 60px
 
 .header__title 
   margin: 0
@@ -111,6 +113,7 @@
     margin-bottom: 20px
 
 .header__title-sub
+  display: block
   font-size: 34px
   line-height: 38px
   .header__title-sub-first,
@@ -176,6 +179,9 @@
     width: 9px
     height: 146px
     background: url('../img/header__type-decor.svg')
+  +media-sm
+    &::before 
+      display: none
 
 .header__type-mark 
   text-decoration: underline
@@ -196,12 +202,12 @@
   margin-left: -100px
   width: 700px
   height: 365px
-  background: url('../../img/header__pack-bg.png') 
+  background: url('../img/header__pack-bg.png') 
   background-size: cover
   +media-lg 
     margin: 0 auto
   +media-md 
-    margin-top: 30px
+    margin-top: 50px
   +media-sm 
     width: 290px
     height: 200px
@@ -225,7 +231,7 @@
     transform: translateY(-50%)
     width: 22px
     height: 24px
-    background-image: url('../../img/rub.svg')
+    background-image: url('../img/rub.svg')
   &--first
     left: 345px
     top: -10px

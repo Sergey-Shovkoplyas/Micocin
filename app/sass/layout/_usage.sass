@@ -1,0 +1,104 @@
+.usage 
+  padding-top: 50px
+  padding-bottom: 34px
+  background: url('../img/waves-top-bg.png') repeat-x center top, url('../img/usage-bg.jpg') repeat-x center top
+  text-align: center
+  background-color: #eef8fa
+
+.usage__decor.decor-circles
+  margin-bottom: 5px
+
+.usage__title.section-title
+  color: #000
+  margin-bottom: 70px
+  +media-sm
+    margin-bottom: 30px
+  +media-xs 
+    font-size: 33px
+
+.usage__title-mark 
+  color: #fa4f01
+
+
+
+.usage__item-wrap
+  position: relative
+  padding-left: 600px
+  background: url('../img/usage-product-bg.png') no-repeat left 145px top 30px
+  +media-lg 
+    padding-left: 495px
+    background-position: 40px 30px
+  +media-md 
+    padding-left: 360px
+    background-position: -10px 30px
+  +media-sm
+    background: url('../img/usage-product-sm-bg.png') no-repeat left 195px top 30px
+    padding-left: 0px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(255, 255, 255, .3)
+  +media-xs 
+    background-position: right 0px top 30px
+
+.usage__item
+  display: flex
+  align-items: center
+  position: relative
+  padding-right: 170px
+  margin-bottom: 15px
+  &:last-child 
+    margin-bottom: 0
+  +media-lg 
+    padding-right: 0
+
+.usage__img-wrap 
+  display: flex
+  flex-shrink: 0
+  justify-content: center
+  align-items: center
+  flex-basis: 135px
+  height: 135px
+  border-radius: 50%
+  background: #ebe4d9
+  +media-sm
+    flex-basis: 115px
+    height: 115px
+
+.usage__img
+  width: 117px
+  height: 117px
+  border-radius: 50%
+  border: 9px solid #f64d01
+  background-color: #fff
+  &--1
+    background: #fff url('../img/usage__img-1.svg') no-repeat center
+  &--2
+    background: #fff url('../img/usage__img-2.svg') no-repeat center
+  &--3
+    background: #fff url('../img/usage__img-3.svg') no-repeat center
+  +media-sm 
+    width: 100px
+    height: 100px
+    border: 6px solid #f64d01
+
+.usage__text 
+  position: relative
+  margin-left: 25px
+  text-align: left 
+  color: #000
+  font-weight: 500
+  &::before 
+    content: ''
+    position: absolute
+    top: -17px
+    left: 0
+    width: 20px
+    height: 3px
+    background-color: #7bbf1c
+  +media-sm 
+    margin-left: 15px

@@ -1,6 +1,16 @@
 .order 
   position: relative
   color: #444
+  &::before 
+    content: ''
+    position: absolute
+    z-index: 1
+    top: -1px
+    left: 50%
+    transform: translateX(-50%)
+    width: 136px
+    height: 9px
+    background-color: #f3f9ff
   &::after 
     content: ''
     position: absolute
@@ -36,7 +46,7 @@
 
 .order__delivery 
   position: absolute
-  top: -2px
+  top: -1px
   left: 50%
   transform: translateX(-50%)
   padding-left: 36px
