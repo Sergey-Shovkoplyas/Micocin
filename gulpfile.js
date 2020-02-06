@@ -8,7 +8,8 @@ const { src, dest, series, parallel, watch } = require('gulp'),
 		browserSync   = require('browser-sync'),
 		concat        = require('gulp-concat'),
 		notify        = require('gulp-notify'),
-		gcmq          = require('gulp-group-css-media-queries');
+		gcmq          = require('gulp-group-css-media-queries'),
+		imagemin      = require('gulp-imagemin');
 
 function styles () {
 	return src('app/sass/**/*.sass')
@@ -40,8 +41,14 @@ function dist () {
 	.pipe(browserSync.stream());
 }
 
+function imageMin () {
+	src('app/img/*')
+	.pipe(imagemin()),
+	.pipe(dest('app/img'))
+}
+
 exports.default = series(styles, serve);
-exports.dist = series(dist, serve);
+exports.dist = series(dist, imageMin, serve);
 
 
 		
