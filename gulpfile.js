@@ -38,17 +38,19 @@ function dist () {
 	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(cleanCSS())
 	.pipe(dest('app/css'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.stream())
 }
 
-function imageMin () {
+function imageMin (done) {
 	src('app/img/*')
-	.pipe(imagemin()),
-	.pipe(dest('app/img'))
+	.pipe(imagemin())
+	.pipe(dest('app/img'));
+	done();
 }
 
 exports.default = series(styles, serve);
-exports.dist = series(dist, imageMin, serve);
+exports.dist = series(dist, serve);
+exports.img = series(imageMin);
 
 
 		
